@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>TierForge</h1>
-    <div id="tier-lists"></div>
-    <form id="tier-list-form">
-        <input type="text" id="title" placeholder="Title" required>
-        <input type="text" id="items" placeholder="Items (comma separated)" required>
-        <button type="submit">Create Tier List</button>
-    </form>
+    <header>
+        <h1>TierForge</h1>
+    </header>
+    <main>
+        <form id="tier-list-form">
+            <input type="text" id="title" placeholder="Tier List Title" required>
+            <input type="text" id="items" placeholder="Comma-separated items" required>
+            <button type="submit">Create Tier List</button>
+        </form>
+        <div id="tier-lists"></div>
+    </main>
     <script src="app.js"></script>
 </body>
 </html>
