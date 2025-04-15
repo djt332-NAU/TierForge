@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input, form button {
+    padding: 10px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+#tier-lists {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.tier-list {
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.tier-list h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.tier {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.tier-label {
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.tier-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    flex-grow: 1;
+    min-height: 150px; /* Set a fixed height for the container */
+    border: 2px dashed #ccc; /* Add a dashed border for better visibility */
+    padding: 10px;
+    background-color: #f9f9f9; /* Light background for better contrast */
+    overflow-y: auto; /* Allow scrolling if items exceed the container height */
+}
+
+.tier-item {
+    padding: 5px 10px;
+    background-color: #ddd;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+    cursor: grab;
+    transition: transform 0.2s;
+}
+
+.tier-item:active {
+    cursor: grabbing;
+    transform: scale(1.1); /* Slightly enlarge the item while dragging */
+}
+
+.tier-list p {
+    margin: 0 0 10px;
+    font-size: 1em;
+    color: #666;
+}
+
+.tier-list .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.tier-list .delete-button:hover {
+    background-color: #a71d2a;
+}
